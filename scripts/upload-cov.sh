@@ -15,7 +15,7 @@ chmod +x codecov
 # If you're uploading from local dev, then set CODECOV_TOKEN
 # and this will pick it up.
 if [[ -z "${CODECOV_TOKEN}" ]]; then
-  ./codecov
+  ./codecov -Z -v
 else
-  ./codecov -t ${CODECOV_TOKEN}
+  ./codecov -Z -v -t ${CODECOV_TOKEN}
 fi
