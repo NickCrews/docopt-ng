@@ -1,3 +1,8 @@
 [build-system]
 requires = ['setuptools', 'wheel']
 
+[tool.pytest.ini_options]
+minversion = "6.0"
+# You need to have `pytest-cov` and `pytest-mypy` installed for this to work.
+addopts = "--cov=docopt --cov-branch --cov-report=term-missing --cov-report=xml:.coverage.xml --mypy --mypy-ignore-missing-imports"
+testpaths = "./tests"
