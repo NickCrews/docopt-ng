@@ -21,7 +21,8 @@ pip-log.txt
 
 # Unit test / coverage reports
 .coverage
-.coverage.xml
+# Where html coverage reports are placed
+coverage_report
 .tox
 nosetests.xml
 
